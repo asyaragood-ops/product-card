@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url('images/background_image.png');
+  background-image: url('images/bg_decor.png');
 }
 
 h1 {
@@ -72,7 +72,7 @@ div.compound{
   padding-left: 16px;
 }
 
-.price{
+.price {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
