@@ -70,7 +70,7 @@ div.product-card__compound{
   line-height: 25px;
 }
 
-.compound ul{
+.product-card__compound ul{
   padding-left: 16px;
 }
 
