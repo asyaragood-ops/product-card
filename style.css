@@ -6,6 +6,50 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-image: url('images/bg_decor.png');
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bttns {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+
+button {
+  background-color: #e1ff0036;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  border-color: #515076;
+  border-radius: 0px;
+  border-width: 2px;
+  margin-right: 25px;
+  color: black;
+  width: 400px;
+  height: 60px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button.action-bttns {
+  background-color: white;
+  font-weight: bold;
+  color: #515076;
+  border-radius: 15px;
+}
+
+button:hover {
+  transition: background-color 0.3s ease;
+  border-width: 3px;
+  background-color: #f0efff;
+}
+
+img.logo {
+  padding-top: 50px;
+  padding-bottom: 0px;
+  height: 300px;
+  width: 250px;
 }
 
 h1 {
@@ -79,3 +123,4 @@ div.product-card__compound {
   justify-content: space-between;
   font-size: 20px;
 }
+
