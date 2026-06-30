@@ -1,10 +1,10 @@
 // задача 3
 
-let getTemperature = (city, temp) => { // создание функции с 2-я параметрами
-  console.log(`Сейчас в ${city} температура — ${temp} градусов по Цельсию`)  // выводл в консоль текста
+let logTemperature = (city, temp) => {
+  console.log(`Сейчас в ${city} температура — ${temp} градусов по Цельсию`);
 };
 
-getTemperature("Москве", 36); //вызов функции с аргументами
+logTemperature("Москве", 36);
 
 
 
@@ -12,7 +12,7 @@ getTemperature("Москве", 36); //вызов функции с аргуме�
 
 const LIGHT_SPEED = 299792458;
 
-let getSpeed = (speed) => {
+let checkSpeedType = (speed) => {
   if (speed > LIGHT_SPEED) {
     console.log("Сверхсветовая скорость");
   } else if (speed < LIGHT_SPEED) {
@@ -22,7 +22,7 @@ let getSpeed = (speed) => {
   };
 };
 
-getSpeed(299792458);
+checkSpeedType(299792458);
 
 
 
@@ -31,7 +31,7 @@ getSpeed(299792458);
 let product = "Продукт";
 let price = 350;
 
-let purchaseProduct = (budget) => {
+let buyProduct = (budget) => {
   if (budget >= price) {
     console.log(`${product} приобретён. Спасибо за покупку!`);
   } else {
@@ -40,13 +40,13 @@ let purchaseProduct = (budget) => {
   }
 };
 
-purchaseProduct(350);
+buyProduct(350);
 
 
 
 // задача 6
 
-let whatever = () => {};
+let empty = () => {};
 
 
 
