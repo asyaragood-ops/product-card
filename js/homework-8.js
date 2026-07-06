@@ -33,13 +33,13 @@ let car = {
 
 // Задача 5. Функция для проверки свойства в объекте.
 
-  function hasMaxSpeed() {
+function ensureMaxSpeed() {
   if (!(Object.hasOwn(car, 'maxSpeed'))) {
     car.maxSpeed = 120;
   };
 };
 
-hasMaxSpeed();
+ensureMaxSpeed();
 
 
 
@@ -63,7 +63,7 @@ console.log(products);
 
 // Задача 8. Массив из объектов.
 
-let books1 = [
+let books = [
   {
     name: "Война и мир",
     author: "Лев Николаевич Толстой",
@@ -89,13 +89,13 @@ let books1 = [
   }
 ];
 
-  console.log(books1);
+  console.log(books);
 
 
 
 // Задача 9. Объединение массивов.
 
-let books2 = [
+let harryPotterBooks = [
   {
     name: "Гарри Поттер и философский камень",
     author: "Джоан Роулинг",
@@ -113,15 +113,15 @@ let books2 = [
   }
 ];
 
-let books = [...books1, ...books2];
+let allBooks = [...books, ...harryPotterBooks];
 
-  console.log(books);
+  console.log(allBooks);
 
 
 
 // Задача 10. Добавление свойства в объект массива
 
-function isBookRare(obj) {
+function markAsRare(obj) {
   if (obj.year > 1900) {
     obj.isRare = false;
   } else {
@@ -129,6 +129,6 @@ function isBookRare(obj) {
   };
 };
 
-books.map(isBookRare);
+allBooks.map(markAsRare);
 
-console.log(books);
+console.log(allBooks);
