@@ -3,57 +3,57 @@ import { userComments } from "./comments.js";
 //Level 1
 
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let numbersRemain = numbers.slice(4, 10);
-console.log(numbersRemain);
+let slicedNumbers = numbers.slice(4, 10);
+console.log(slicedNumbers);
 
-let cars = ["toyota", "mercedes", "bmw", "mitsubishi"];
-console.log(cars.includes("bmw"));
+let carBrands = ["toyota", "mercedes", "bmw", "mitsubishi"];
+console.log(carBrands.includes("bmw"));
 
-function reverseArrays(array1, array2) {
-  array1.reverse();
-  array2.reverse();
+function reverseArrays(firstArray, secondArray) {
+  firstArray.reverse();
+  secondArray.reverse();
 };
 
-reverseArrays(cars, numbersRemain);
-console.log(cars, numbersRemain);
+reverseArrays(carBrands, slicedNumbers);
+console.log(carBrands, slicedNumbers);
 
 
 
 //Level 2
 
-const comDomainPost = userComments.filter(user => user.email.includes(".com"));
-const userCommentsText = comDomainPost.map((userComments) => userComments.body)
-console.log(userCommentsText);
+const commentsWithComEmail = userComments.filter(comment => comment.email.includes(".com"));
+const commentTexts = commentsWithComEmail.map((comment) => comment.body)
+console.log(commentTexts);
 
-userComments.forEach((user) => {
-  user.id <= 5 ? user.postId = 2 : user.postId = 1;
+userComments.forEach((comment) => {
+  comment.id <= 5 ? comment.postId = 2 : comment.postId = 1;
 });
 console.log(userComments);
 
-const nameAndId = userComments.map(user => ({
-  id: user.id,
-  name: user.name
+const commentAuthors = userComments.map(comment => ({
+  id: comment.id,
+  name: comment.name
 }));
-console.log(nameAndId);
+console.log(commentAuthors);
 
-const validatedComment = userComments.map(user => ({
-  ...user,
-  isInvalid: user.body.length > 180
+const validatedComments = userComments.map(comment => ({
+  ...comment,
+  isInvalid: comment.body.length > 180
 }));
-console.log(validatedComment);
+console.log(validatedComments);
 
 
 
 //Level 3
 
-const emailsMap = userComments.map(user => user.email);
-console.log(emailsMap);
+const userEmails = userComments.map(comment => comment.email);
+console.log(userEmails);
 
-const emailsReduce = userComments.reduce((acc, user) => {
-  acc.push(user.email);
-  return acc;
+const userEmailsWithReduce = userComments.reduce((emails, comment) => {
+  emails.push(comment.email);
+  return emails;
 }, []);
-console.log(emailsReduce);
+console.log(userEmailsWithReduce);
 
-const emailsToString = emailsMap.join(", ");
-console.log(emailsToString);
+const emailsString = userEmails.join(", ");
+console.log(emailsString);
