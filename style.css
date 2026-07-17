@@ -68,7 +68,7 @@ ul.product-card {
   list-style: none;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0px 85px;
+  padding: 0px 250px 0px 250px;
   margin: 0px;
   margin-bottom: 116px;
 }
