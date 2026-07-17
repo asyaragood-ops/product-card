@@ -7,7 +7,7 @@ const RUBLE_SIGN = '\u{20BD}';
 
 function getCardCount() {
   for(;;) {
-        const input = prompt("Сколько карточек отобразить? От 1 до 5");
+    const input = prompt("Сколько карточек отобразить? От 1 до 5");
     let count = Number(input);
 
     if (count >= 1 && count <= 5) {
