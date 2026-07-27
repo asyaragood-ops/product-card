@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  
   <div class="bttns">
     <a href="/index.html">
       <img class="logo" src="images/logo.png" alt="Логотип">
@@ -23,6 +22,7 @@
     <button class="action-bttns" id="google-bttn">Перейти в google</button>
     <button class="action-bttns" id="log-alert-bttn">Лог и alert</button>
     <button class="action-bttns" id="repeat-bttn">Кнопка повторного нажатия</button>
+    <button class="action-bttns" id="register-bttn">Регистрация</button>
   </div>
   
   <h1>Выбери свой продукт</h1>
@@ -49,11 +49,83 @@
     </template>
   </ul>
 
+  <footer class="page-footer">
+    <div class="page-footer-blocks">
+      <div class="footer-left">
+        <h3>Product Cards</h3>
+        <span>У нас самые лучшие продукты для кожи!</span>
+        <div class="social-icons">
+        <a href="#">
+          <img src="images/tg_icon.svg" alt="Иконка Телеграмма">
+        </a>
+        <a href="#">
+          <img src="images/vk_icon.svg" alt="Иконка Вконтакте">
+        </a>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <form class="stock">
+          <span>Подпишись на наши акции:</span>
+          <div class="subscribe">
+            <input type="email" id="sub-input" placeholder="Введи Email...">
+            <button type="submit" id="sub-button">Подписаться</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer-right">
+        <nav class="navigation">
+          <span>Быстрые ссылки</span>
+          <ul>
+            <a href="#">
+              <li>Главная</li>
+            </a>
+            <a href="#">            
+              <li>Магазин</li>
+            </a>
+            <a href="#">
+              <li>Контакты</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <hr class="decoration-line">
+    <span>www.product-cards.com©all right reserve</span>
+  </footer>
+
+  <div class="overlay">
+    <div class="modal">
+      <div class="modal-showed">
+        <form class="register-form" id="registerForm">
+          <h2>Регистрация</h2>
+          <label for="formName">Имя пользователя</label> 
+          <input type="text" id="formName" placeholder="Имя" name="formName" required>
+          <label for="lastName">Фамилия</label>
+          <input type="text" id="lastName" placeholder="Фамилия" name="lastName" required>
+          <label for="birthday">Дата рождения</label>
+          <input type="date" id="birthday" placeholder="Дата рождения" name="birthday" required>
+          <label for="email-form">Электронная почта</label>
+          <input type="email" id="email-form" placeholder="Логин" name="email" required>
+          <label for="password">Пароль</label>
+          <input type="password" id="password" placeholder="Пароль" name="password" required>
+          <label for="password-confirm">Подтверждение пароля</label>
+          <input type="password" id="password-confirm" placeholder="Повторение пароля" name="password-confirm" required>
+          <button type="submit" class="send-btn">Отправить</button>
+          <p id="message" style="color:red"></p>
+        </form>
+        <button class="close-btn">&times;</button>
+      </div>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
   <script src="js/homework-7.js"></script>
   <script src="js/homework-8.js"></script>
   <script type="module" src="js/homework-9.js"></script>
   <script type="module" src="js/homework-10.js"></script>
+  <script type="module" src="js/homework-11.js"></script>
 </body>
 
 </html>
